@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+    <string name="hit_api">Hit API</string>
+    <string name="title">Title</string>
+    <string name="Subtitle">Subtitle</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="genre">Genre</string>
+    <string name="duration">Duration</string>
+    <string name="rating">Rating</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upcoming">Up Coming</string>
+    <string name="nowPlaying">Now Playing</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="minute">Minute</string>
+</resources>
