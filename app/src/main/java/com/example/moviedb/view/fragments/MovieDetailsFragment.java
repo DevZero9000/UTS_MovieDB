@@ -65,7 +65,8 @@ public class MovieDetailsFragment extends Fragment {
         }
     }
 
-    private TextView lbl_movie_title, lbl_movie_releaseDate, lbl_movie_synopsis, lbl_movie_genre, lbl_movie_duration, lbl_movie_rating;
+    private TextView lbl_movie_title, lbl_movie_releaseDate, lbl_movie_synopsis,
+            lbl_movie_genre, lbl_movie_duration, lbl_movie_rating, lbl_vote, lbl_tagline, lbl_popularity;
     private TextView lbl_movie_id;
     private MovieViewModel movieViewModel;
     private ImageView img_details, backdrop_detail_fragment;
@@ -87,6 +88,9 @@ public class MovieDetailsFragment extends Fragment {
         lbl_movie_genre = view.findViewById(R.id.lbl_movie_genre_fragment);
         lbl_movie_duration = view.findViewById(R.id.lbl_movie_duration_fragment);
         lbl_movie_rating = view.findViewById(R.id.lbl_movie_rating_fragment);
+        lbl_vote = view.findViewById(R.id.lbl_vote_fragment);
+        lbl_tagline = view.findViewById(R.id.lbl_movie_tagline_fragment);
+        lbl_popularity = view.findViewById(R.id.lbl_popularity_fragment);
 
         movieViewModel = new ViewModelProvider(getActivity()).get(MovieViewModel.class);
         movieViewModel.getMovieById(movieId);
@@ -105,6 +109,9 @@ public class MovieDetailsFragment extends Fragment {
             String synopsis = movies.getOverview();
             String duration = String.valueOf(movies.getRuntime());
             String rating = String.valueOf(movies.getVote_average());
+            String vote = String.valueOf(movies.getVote_count());
+            String tagline = String.valueOf(movies.getTagline());
+            String popularity = String.valueOf(movies.getPopularity());
             String genre = "";
             String img_path = Const.IMG_URL + movies.getPoster_path().toString();
             String backdrop_path = Const.IMG_URL + movies.getBackdrop_path().toString();
@@ -126,6 +133,9 @@ public class MovieDetailsFragment extends Fragment {
             lbl_movie_duration.setText(duration);
             lbl_movie_rating.setText(rating);
             lbl_movie_genre.setText(genre);
+            lbl_vote.setText("("+vote+")");
+            lbl_tagline.setText(tagline);
+            lbl_popularity.setText(popularity);
 
 
         }

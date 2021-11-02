@@ -18,6 +18,9 @@
         <entry key="..\:/MovieDB/app/src/main/res/layout/fragment_up_coming.xml" value="0.23541666666666666" />
         <entry key="..\:/MovieDB/app/src/main/res/menu/main_menu.xml" value="0.23541666666666666" />
         <entry key="..\:/MovieDB/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2171875" />
+        <entry key="..\:/UTS_MovieDB/app/src/main/res/layout/card_up_coming.xml" value="0.2942708333333333" />
+        <entry key="..\:/UTS_MovieDB/app/src/main/res/layout/fragment_movie_details.xml" value="0.2942708333333333" />
+        <entry key="..\:/UTS_MovieDB/app/src/main/res/layout/fragment_now_playing.xml" value="0.2942708333333333" />
       </map>
     </option>
   </component>

@@ -13,4 +13,5 @@
     <string name="nowPlaying">Now Playing</string>
     <string name="movie_details">Movie Details</string>
     <string name="minute">Minute</string>
+    <string name="popularity">Popularity</string>
 </resources>
